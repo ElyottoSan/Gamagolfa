@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu principal.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Parcours 1 - Mer.unity
+    guid: ea76697375be7664fb03eeded0971d69
+  - enabled: 1
+    path: "Assets/Scenes/Parcours 2 - D\xE9sert.unity"
+    guid: 0170bafcb6bacd040851d439c86f9523
+  - enabled: 1
+    path: Assets/Scenes/Parcours 3 - Neige.unity
+    guid: ec966a4ea7bb1c1409d154dcfca4f6b4
+  - enabled: 1
+    path: Assets/Scenes/Parcours 4 - Feu.unity
+    guid: fa6a25e0c524c284d845f6e3983ecb0f
   m_configObjects: {}
