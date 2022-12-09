@@ -30,9 +30,15 @@ public class PauseScript : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     //Retour au menu principal
-    public void RetoourAuMenu()
+    public void RetourAuMenu()
     {
         Time.timeScale = 1.0f;
         SceneManager.LoadScene(0); //Charger la scène 0 = le menu
+    }
+    // Charger le niveau d'après
+    public void NiveauSuivant()
+    {
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
