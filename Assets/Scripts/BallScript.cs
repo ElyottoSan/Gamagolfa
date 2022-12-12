@@ -9,9 +9,14 @@ public class BallScript : MonoBehaviour
     public AudioSource audiowin;
     public Easing.Type easing;
     Vector3 lastPos;
+    public float delay;
+    public GameObject menuFin;
+    public GameObject VFX;
 
     void start()
     {
+        menuFin.SetActive(false);
+        VFX.SetActive(false);
         Camera.main.FadeIn(3f, easing);
         lastPos = this.transform.position;
     }
@@ -27,7 +32,7 @@ public class BallScript : MonoBehaviour
             StartCoroutine("ResetBall");
         }
     }
-    
+
     void Update()
     {
             //On démarre la coroutine
@@ -59,17 +64,22 @@ public class BallScript : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        //Déclencher fin de niveau
-        audiowin.Play();
-        Invoke("MenuNextLevel", 4f);
-        //Récupérer le numéro du niveau. 0 = menu ; 1 = niveau 1 ; 2 = niveau 2 ; etc...
-        int NiveauActuel = SceneManager.GetActiveScene().buildIndex;
-        //Puis sauvegarder le numéro du dernier niveau terminé
-        PlayerPrefs.SetInt("Dernier niveau", NiveauActuel);
+        if (other.gameObject.tag == "Fin")
+        {
+            //Déclencher fin de niveau
+            audiowin.Play();
+            VFX.SetActive(true);
+            Invoke("MenuNextLevel", delay);
+            //Récupérer le numéro du niveau. 0 = menu ; 1 = niveau 1 ; 2 = niveau 2 ; etc...
+            int NiveauActuel = SceneManager.GetActiveScene().buildIndex;
+            //Puis sauvegarder le numéro du dernier niveau terminé
+            PlayerPrefs.SetInt("Dernier niveau", NiveauActuel);
+        }        
     }
 
     void MenuNextLevel()
     {
         Time.timeScale = 0.0f;
+        menuFin.SetActive(true);
     }
 }

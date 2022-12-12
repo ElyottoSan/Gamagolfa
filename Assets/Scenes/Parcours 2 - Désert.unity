@@ -1955,6 +1955,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5194258406557848865, guid: ec7616b1807cd264b89e6c121f4d57c3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -126.3
+      objectReference: {fileID: 0}
     - target: {fileID: 5194258406763308526, guid: ec7616b1807cd264b89e6c121f4d57c3, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1965,6 +1969,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5194258406763308526, guid: ec7616b1807cd264b89e6c121f4d57c3, type: 3}
       propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5194258406879001518, guid: ec7616b1807cd264b89e6c121f4d57c3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5194258406883173068, guid: ec7616b1807cd264b89e6c121f4d57c3, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5194258407112280998, guid: ec7616b1807cd264b89e6c121f4d57c3, type: 3}
@@ -7137,7 +7149,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 20761814f61e8a340a1b25fde8be48ed, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8051,6 +8063,9 @@ MonoBehaviour:
   audiofail: {fileID: 1029108284}
   audiowin: {fileID: 1731371655}
   easing: 11
+  delay: 4
+  menuFin: {fileID: 465327715}
+  VFX: {fileID: 1726670923}
 --- !u!82 &1463742775
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9263,8 +9278,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Sph\xE8reFin"
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5164860766023036820, guid: 2730350ad07438742ba0ea1dc63b5414, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5164498044149589737, guid: 2730350ad07438742ba0ea1dc63b5414, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2730350ad07438742ba0ea1dc63b5414, type: 3}
+--- !u!1 &1726670923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5164860766023036820, guid: 2730350ad07438742ba0ea1dc63b5414, type: 3}
+  m_PrefabInstance: {fileID: 1726670922}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1730624290
 GameObject:
   m_ObjectHideFlags: 0

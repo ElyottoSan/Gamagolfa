@@ -6,6 +6,7 @@ public class TriggerFin : MonoBehaviour
 {
     public GameObject VFX;
     public GameObject menuFin;
+    public float delay;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,7 @@ public class TriggerFin : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
             VFX.SetActive(true);
-            Invoke("MenuFin", 4f);
+            Invoke("MenuFin", delay);        
     }
     private void MenuFin()
     {
