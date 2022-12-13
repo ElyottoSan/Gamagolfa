@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu principal.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: "Assets/Scenes/S\xE9lectionNiveaux.unity"
+    guid: d8873142425e7e7439247d5877a3135b
+  - enabled: 1
     path: Assets/Scenes/Parcours 1 - Mer.unity
     guid: ea76697375be7664fb03eeded0971d69
   - enabled: 1

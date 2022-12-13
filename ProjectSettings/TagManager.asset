@@ -6,6 +6,8 @@ TagManager:
   tags:
   - SortieParcours
   - Fin
+  - BoutonLevel
+  - GameMusic
   layers:
   - Default
   - TransparentFX

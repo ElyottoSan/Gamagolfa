@@ -8,30 +8,11 @@ public class MenuScriptManager : MonoBehaviour
 {
     public GameObject menuStarting;
     public GameObject menuControles;
-    public GameObject menuSelectionNiveaux;
-    Button[] btns;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         menuControles.SetActive(false);
-        menuSelectionNiveaux.SetActive(false);
-        int lastLevel = PlayerPrefs.GetInt("DernierNiveau");
-        btns = GameObject.FindObjectsOfType<Button>();
-        foreach(Button btn in btns)
-        {
-            int level = int.Parse(btn.transform.GetChild(0).gameObject.GetComponent<Text>().text);
-            if (level <= lastLevel)
-            {
-                btn.interactable = true;
-            }
-        }
-    }
-
-    public void SelectionNiveaux()
-    {
-        menuSelectionNiveaux.SetActive(true);
-        menuStarting.SetActive(false);
     }
 
     public void Controles()
@@ -43,7 +24,6 @@ public class MenuScriptManager : MonoBehaviour
     public void Croix()
     {
         menuControles.SetActive(false);
-        menuSelectionNiveaux.SetActive(false);
         menuStarting.SetActive(true);
     }
 
@@ -52,8 +32,9 @@ public class MenuScriptManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void LoadSelectedLevel(int Niveau)
+    // Charger un niveau
+    public void LoadSelectedLevel(int level)
     {
-        SceneManager.LoadScene(Niveau);
+        SceneManager.LoadScene(level);
     }
 }

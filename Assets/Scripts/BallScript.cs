@@ -71,9 +71,9 @@ public class BallScript : MonoBehaviour
             VFX.SetActive(true);
             Invoke("MenuNextLevel", delay);
             //Récupérer le numéro du niveau. 0 = menu ; 1 = niveau 1 ; 2 = niveau 2 ; etc...
-            int NiveauActuel = SceneManager.GetActiveScene().buildIndex;
+            int niveauActuel = SceneManager.GetActiveScene().buildIndex;
             //Puis sauvegarder le numéro du dernier niveau terminé
-            PlayerPrefs.SetInt("DernierNiveau", NiveauActuel);
+            PlayerPrefs.SetInt("DernierNiveau", niveauActuel);
         }        
     }
 
