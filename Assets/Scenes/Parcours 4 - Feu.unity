@@ -10406,7 +10406,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5194258407233626204}
         m_TargetAssemblyTypeName: PauseScript, Assembly-CSharp
-        m_MethodName: RetoourAuMenu
+        m_MethodName: RetourAuMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12368,7 +12368,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5194258407233626204}
         m_TargetAssemblyTypeName: PauseScript, Assembly-CSharp
-        m_MethodName: RetoourAuMenu
+        m_MethodName: RetourAuMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
