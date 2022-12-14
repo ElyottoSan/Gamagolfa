@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.32928297, g: 0.70646495, b: 1.420049, a: 1}
+  m_IndirectSpecularColor: {r: 0.32934523, g: 0.7064945, b: 1.4200202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12173,7 +12173,7 @@ ParticleSystem:
         m_RotationOrder: 4
     minKillSpeed: 0
     maxKillSpeed: 10000
-    radiusScale: 1
+    radiusScale: 0.4
     collidesWith:
       serializedVersion: 2
       m_Bits: 4294967295
