@@ -296,3 +296,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   easing: 11
+  delay: 3

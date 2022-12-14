@@ -6,10 +6,11 @@ public class CameraScriptIntro : MonoBehaviour
 {
     public GameObject Player;
     public GameObject Canva;
-    public GameObject Camera;
+    public GameObject CameraIntro;
     // Start is called before the first frame update
     void Start()
     {
+        Camera.main.FadeIn(3f);
         Player.SetActive(false);
         Canva.SetActive(false);
     }
@@ -19,6 +20,6 @@ public class CameraScriptIntro : MonoBehaviour
     {
         Player.SetActive(true);
         Canva.SetActive(true);
-        Camera.SetActive(false);
+        CameraIntro.SetActive(false);
     }
 }

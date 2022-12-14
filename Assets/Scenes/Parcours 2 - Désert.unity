@@ -4277,7 +4277,6 @@ GameObject:
   - component: {fileID: 822813504}
   - component: {fileID: 822813503}
   - component: {fileID: 822813508}
-  - component: {fileID: 822813509}
   - component: {fileID: 822813507}
   m_Layer: 3
   m_Name: CameraIntro
@@ -4427,7 +4426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 1784307526}
   Canva: {fileID: 465327716}
-  Camera: {fileID: 822813502}
+  CameraIntro: {fileID: 822813502}
 --- !u!95 &822813508
 Animator:
   serializedVersion: 4
@@ -4448,20 +4447,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &822813509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 822813502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0cf9cb408c9946188d28dd1ac4c9836, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  easing: 0
-  delay: 3
 --- !u!1 &823693372
 GameObject:
   m_ObjectHideFlags: 0
