@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class CameraScriptIntro : MonoBehaviour
 {
-    public GameObject Player;
-    public GameObject Canva;
-    public GameObject CameraIntro;
+    public GameObject Player; //la balle
+    public GameObject Canva; //l'interface
+    public GameObject CameraIntro; //la présente caméra
+
     // Start is called before the first frame update
     void Start()
     {
         Camera.main.FadeIn(3f);
-        Player.SetActive(false);
-        Canva.SetActive(false);
+        Player.SetActive(false); //la balle est désactivée lors de la cinématique
+        Canva.SetActive(false); //Idem pour l'interface
     }
 
-    // Update is called once per frame
     public void FinAnim()
     {
-        Player.SetActive(true);
-        Canva.SetActive(true);
-        CameraIntro.SetActive(false);
+        Player.SetActive(true); // Puis réactivée à la fin
+        Canva.SetActive(true); //Pareil
+        CameraIntro.SetActive(false); //La caméra d'intro est désactivée
     }
 }

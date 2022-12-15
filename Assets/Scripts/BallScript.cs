@@ -7,7 +7,6 @@ public class BallScript : MonoBehaviour
 {
     public AudioSource audiofail;
     public AudioSource audiowin;
-    public Easing.Type easing;
     Vector3 lastPos;
     public float delay;
     public GameObject menuFin;
@@ -17,7 +16,6 @@ public class BallScript : MonoBehaviour
     {
         menuFin.SetActive(false);
         VFX.SetActive(false);
-        Camera.main.FadeIn(3f, easing);
         lastPos = this.transform.position;
     }
 

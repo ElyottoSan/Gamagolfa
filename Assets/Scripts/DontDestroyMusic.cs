@@ -7,8 +7,10 @@ public class DontDestroyMusic : MonoBehaviour
 {
     void Update()
     {
+        //La scène active
         Scene currentScene = SceneManager.GetActiveScene();
 
+        //Désactiver la musique dans les niveaux de gameplay seulement
         if (currentScene.name == "Parcours 1 - Mer")
         {
             Destroy(this.gameObject);
@@ -29,6 +31,7 @@ public class DontDestroyMusic : MonoBehaviour
 
     private void Awake()
     {
+        //La musique ne sera pas détruite à la scène suivante
         GameObject[] musicObj = GameObject.FindGameObjectsWithTag("GameMusic");
         if (musicObj.Length > 1)
         {
