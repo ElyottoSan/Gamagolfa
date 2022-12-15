@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.32928297, g: 0.70646495, b: 1.420049, a: 1}
+  m_IndirectSpecularColor: {r: 0.32934523, g: 0.7064945, b: 1.4200202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -19750,8 +19750,8 @@ GameObject:
   - component: {fileID: 1912419189}
   - component: {fileID: 1912419188}
   - component: {fileID: 1912419187}
-  - component: {fileID: 1912419186}
   - component: {fileID: 1912419185}
+  - component: {fileID: 1912419186}
   - component: {fileID: 1912419184}
   m_Layer: 3
   m_Name: CameraIntro
@@ -19793,7 +19793,7 @@ MonoBehaviour:
     m_Bits: 8
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
-  antialiasingMode: 2
+  antialiasingMode: 3
   temporalAntialiasing:
     jitterSpread: 0.75
     sharpness: 0.25
@@ -19895,7 +19895,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
